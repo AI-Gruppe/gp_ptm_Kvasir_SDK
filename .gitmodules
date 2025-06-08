@@ -1,12 +1,12 @@
 [submodule "uc_log"]
 	path = uc_log
-	url = https://github.com/dominicpoeschko/uc_log.git
+	url = git@github.com:AI-Gruppe/gp_ptm_uc_log.git
 [submodule "cmake_git_version"]
 	path = cmake_git_version
 	url = https://github.com/dominicpoeschko/cmake_git_version.git
 [submodule "svd_converter"]
 	path = svd_converter
-	url = https://github.com/dominicpoeschko/svd_converter.git
+	url = git@github.com:AI-Gruppe/gp_ptm_svd_converter.git
 [submodule "lib/libcxx"]
 	path = lib/libcxx
 	url = https://github.com/dominicpoeschko/libcxx.git
