@@ -10,7 +10,7 @@ RUN pacman --disable-download-timeout --noconfirm --needed -S base-devel $(echo 
 RUN useradd trizenuser --create-home
 RUN echo "trizenuser ALL=(ALL) NOPASSWD: /usr/bin/pacman" > "/etc/sudoers.d/allow_nobody_to_pacman"
 RUN su trizenuser -c "/bin/sh -c 'cd ~ && git clone https://aur.archlinux.org/trizen.git && cd trizen && makepkg --noconfirm -si'"
-RUN su trizenuser -c "/bin/sh -c 'trizen -S --noinfo --noconfirm inja jlink-software-and-documentation'"
+RUN su trizenuser -c "/bin/sh -c 'trizen -S --noinfo --noconfirm inja'"
 
 ARG TRIZENEXTRAPACKAGES=""
 RUN su trizenuser -c "/bin/sh -c 'trizen -S --noinfo --noconfirm $TRIZENEXTRAPACKAGES'"
